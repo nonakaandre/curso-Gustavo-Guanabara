@@ -3,30 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens dinamicas</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Vídeos com HTML</title>
 </head>
 <body>
-    <h1>Criando uma página com imagens dinâmicas</h1>
-
-    <picture>
-        <source media="(max-width: 700px )" srcset="imagens/foto-p.png">
-        <source media="(max-width: 1000px )" srcset="imagens/foto-m.png">
-        <img src="imagens/foto-g.png" alt="imagem g">
-    </picture>
-
-    <h1>Reproduzindo áudio</h1>
-    <p>Aprendendo a reproduzir áudio</p>
-    <!--<audio src="midia/Blitiz - a dois passos do paraiso.mp3" auto play controls></audio> -->
-
-    <audio preload="metadata" autoplay controls>
-        <source src="midia/Blitiz - a dois passos do paraiso.mp3" type="audio/mpeg" >
-        <p>Infelizmente seu navegador não consegui reprodizir o áudio</p>
-        <a href="midia/Blitiz - a dois passos do paraiso.mp3">Click aqui para baixar o áudio</a>
-    </audio>
-
-
-     
-
-
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo eatá hospedado no meu próprio servidor</p>
+        <video width="400px" poster="imagens/CIMG3063.JPG" controls>
+            <source src="midia/video-para-aula.mp4" type="video/mp4">
+            <!--Ao adicionar mais de um video o sistema vai carregar na ordem que estiver de cima para baixo.-->
+        </video>
+    </div>
 </body>
 </html>

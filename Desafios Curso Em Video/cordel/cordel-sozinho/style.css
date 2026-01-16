@@ -9,15 +9,17 @@
     margin: 0;
     padding: 0;
 }
-
+/* USANDO max e min-width e height É POSSÍVEL CONTROLAR COMO A PÁGINA VAI REAGIR SEM PERDER A QUALIDADE ME DANDO RESPONSIVIDADE*/
 body{
     display: block;
+    max-width: 100%;
+    min-width: 320px;
 }
 
 header {
-    background-color: black;
-    height: 250px;
     display: block;
+    background-color: black;
+    min-height: 30vh;
 }
 
 header h1 {
@@ -51,8 +53,7 @@ div.normal {
 }
 
 main {
-    max-width: 100%;
-    min-width: 320px;
+    
 }
 
 .normal p {

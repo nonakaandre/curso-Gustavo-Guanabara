@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Indie Flower&family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", sans-serif;
+    --fonte3: "Indie Flower", cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +18,22 @@ html, body {
     min-width: 100vh; 
 
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header h1 {
     padding-top: 50px;
     /* FAZ COM QUE AS LETRAS INICIAIS FIQUEM MAIORES */
     font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -40,10 +52,16 @@ header a:hover, footer a:hover {
 }
 
 section {
-     padding-top: 10vh;  /*10% DA ALTURA DA TELA */
+    padding-top: 10vh;  /*10% DA ALTURA DA TELA */
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -54,13 +72,36 @@ section.normal {
 section.img {
     background-color: rgb(105, 105, 105);
     color: white;
+    /* ESSE BOX-SHADOW DA VOLUME INTERNO PARA A CAIXA QUANDO USAMOS O 'INSET' */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.349);
+    background-attachment: fixed;
 
 }
 
 section.img > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.253);
+    /* FAZ O CONTEÚDO SE ADAPTAR DENTRO DO BLOCO QUE ELE ESTÁ SEM VAZAR */
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.553);
+    padding: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black;
+/* ESSE BOX-SHADOW DA VOLUME INTERNO PARA A CAIXA QUANDO USAMOS O 'INSET' */
+    box-shadow:  6px 6px 13px 0px rgba(0, 0, 0, 0.822);
+    
 }
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+
+
 
 footer {
     background-color: black;

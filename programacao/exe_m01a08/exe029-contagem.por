@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Util --> u
+	inclua biblioteca Util --> u
 	
 	funcao inicio()
 	{
@@ -18,7 +18,7 @@ programa
 		enquanto (cont <= term){
 			escreva(cont, " - ")
 			u.aguarde(300)
-			cont = cont + incr
+			cont = cont + incr //CONT += INCR
 		}
 		escreva("FIM\n\n")
 		
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 499; 
+ * @POSICAO-CURSOR = 477; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

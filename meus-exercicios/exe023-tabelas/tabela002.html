@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* FAZ PARTE DO EFEITO PARA DEIXAR O CABEÇALHO FIXO*/
         }
 
         td, th {
@@ -23,6 +24,25 @@
             background-color: lightgray;
             color: white;
             text-shadow: 1px 1px 1px black;
+        }
+        thead > tr > th {
+            position: sticky;  /* FAZ COM QUE  O CABAÇALHO DA TABELA FIQUE FIXO  */
+            top: -1px;
+            background-color: lightgray ;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #9b9a9a31;
         }
 
     </style>
@@ -39,36 +59,85 @@
                 TR, TD, TH
         -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th>
+                <th scope="col"  style="width: 100px;">População</th>
+                <th style="width: 100px;">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>44 411 238</td>
-                <td>32,4</td>
+                <td class="num">46 081 801</td>
+                <td class="num">21,59%</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>20 539 989</td>
-                <td>32,79</td>
+                <td class="num">20 539 989</td>
+                <td class="num">32,79%</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 264 943</td>
-                <td>352,05</td>
+                <td class="num">17 264 943</td>
+                <td class="num">352,05%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+                <td class="num">6,97%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+                <td class="num">5,57%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263</td>
+                <td class="num">5,26%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+                <td class="num">4,48%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 268 836</td>
+                <td class="num">4,34%</td>
+            </tr> 
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+                <td class="num">4,08%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+                <td class="num">3,84%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 423 629</td>
+                <td class="num">3,84%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 018 211</td>
+                <td class="num">3,29%</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>170 989 023</strong></td>
+                <td class="num"><strong>80,13%</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias porro accusamus, consectetur saepe cupiditate tenetur suscipit omnis quae reprehenderit quis voluptates totam dolorem corporis necessitatibus a perferendis, repudiandae iure!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt sed impedit ipsam tempore placeat, facilis quae at culpa dolor hic eos nesciunt perspiciatis quod vero eligendi laboriosam natus eius.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias porro accusamus, consectetur saepe cupiditate tenetur suscipit omnis quae reprehenderit quis voluptates totam dolorem corporis necessitatibus a perferendis, repudiandae iure!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt sed impedit ipsam tempore placeat, facilis quae at culpa dolor hic eos nesciunt perspiciatis quod vero eligendi laboriosam natus eius.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias porro accusamus, consectetur saepe cupiditate tenetur suscipit omnis quae reprehenderit quis voluptates totam dolorem corporis necessitatibus a perferendis, repudiandae iure!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt sed impedit ipsam tempore placeat, facilis quae at culpa dolor hic eos nesciunt perspiciatis quod vero eligendi laboriosam natus eius.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias porro accusamus, consectetur saepe cupiditate tenetur suscipit omnis quae reprehenderit quis voluptates totam dolorem corporis necessitatibus a perferendis, repudiandae iure!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt sed impedit ipsam tempore placeat, facilis quae at culpa dolor hic eos nesciunt perspiciatis quod vero eligendi laboriosam natus eius.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias porro accusamus, consectetur saepe cupiditate tenetur suscipit omnis quae reprehenderit quis voluptates totam dolorem corporis necessitatibus a perferendis, repudiandae iure!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt sed impedit ipsam tempore placeat, facilis quae at culpa dolor hic eos nesciunt perspiciatis quod vero eligendi laboriosam natus eius.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias porro accusamus, consectetur saepe cupiditate tenetur suscipit omnis quae reprehenderit quis voluptates totam dolorem corporis necessitatibus a perferendis, repudiandae iure!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt sed impedit ipsam tempore placeat, facilis quae at culpa dolor hic eos nesciunt perspiciatis quod vero eligendi laboriosam natus eius.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima molestias porro accusamus, consectetur saepe cupiditate tenetur suscipit omnis quae reprehenderit quis voluptates totam dolorem corporis necessitatibus a perferendis, repudiandae iure!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias incidunt sed impedit ipsam tempore placeat, facilis quae at culpa dolor hic eos nesciunt perspiciatis quod vero eligendi laboriosam natus eius.</p>
 </body>
 </html>

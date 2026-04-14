@@ -1,0 +1,24 @@
+<!DOCtYPE html>
+<html Lang="pt-br">
+    <head>
+        <meta charset="UTF8"/>
+        <title>Curso de PHP</title>
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div>
+            <h2>Operadores Unários</h2>
+            <?php
+                $n1 = $_GET["a"];
+                $n2 = $_GET["b"];
+                $tipo = $_GET["op"];
+                echo "Os valores passados foram $n1 e $n2 <br/>";
+                $r = ($tipo == "s")?$n1+$n2:$n1*$n2;
+                echo "O resultado será $r";    
+            
+             ?>
+        </div>
+    </body>
+
+
+</html>

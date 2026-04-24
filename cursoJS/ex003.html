@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20pt;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+<script>
+    var nome = prompt("Qual é o seu nome?");
+    document.write(`Seu tem ${nome.length} letras.<br>`);
+    // O método length retorna o número de caracteres em uma string, incluindo espaços. Portanto, ao usar nome.length, estamos obtendo a quantidade total de caracteres presentes na variável nome.
+    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`);
+    // O método toUpperCase() converte todos os caracteres de uma string para maiúsculas. Ao usar nome.toUpperCase(), estamos transformando o valor da variável nome em letras maiúsculas.
+    document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br>`);
+    // O método toLowerCase() converte todos os caracteres de uma string para minúsculas. Ao usar nome.toLowerCase(), estamos transformando o valor da variável nome em letras minúsculas.
+
+</script>
+</body>
+</html>

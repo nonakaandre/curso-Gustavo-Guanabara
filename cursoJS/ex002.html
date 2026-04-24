@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando em JS</title>
+</head>
+
+<body>
+<script>
+    var n1 = window.prompt("Digite um número:");
+    var n2 = window.prompt("Digite outro número:");
+    var s = Number(n1) + Number(n2);
+    alert("A soma entre " + n1 + " e " + n2 + " é igual a " + String(s) + "!");
+
+    // Também é possível converter os valores usando a função parseInt() ou parseFloat() para números inteiros ou decimais, respectivamente.
+    // Outra forma de formatar a mensagem é utilizando template literals, que permitem a inclusão de expressões dentro de strings usando a sintaxe `${expressão}`. Exemplo:
+    // alert(`A soma entre ${n1} e ${n2} é igual a ${s}!`);
+
+    // Lembre-se de que a função prompt() retorna uma string, então é necessário converter os valores para números antes de realizar a soma. Caso contrário, a operação resultaria em concatenação de strings em vez de soma numérica.
+    
+</script>
+</body>
+
+</html>

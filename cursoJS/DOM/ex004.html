@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando com o DOM</title>
+</head>
+<body>
+    <h1>Iniciando com o DOM</h1>
+    <p>O DOM (Document Object Model) é uma interface de programação para documentos HTML e XML. Ele representa a estrutura do documento como uma árvore de objetos, permitindo que os desenvolvedores acessem e manipulem o conteúdo, a estrutura e o estilo de uma página web de forma dinâmica. Com o DOM, é possível criar, modificar e excluir elementos HTML, alterar atributos, adicionar eventos e muito mais, proporcionando uma experiência interativa para os usuários.</p>
+     <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[1];
+        window.document.write(`O texto do primeiro parágrafo é: ${p1.innerText}`);
+        //var d = window.document.getElementById("msg");
+        var d = window.document.querySelector("#msg");
+        d.style.fontSize = "30pt";
+        d.style.fontWeight = "bold";
+        d.style.color = "red";
+
+
+    </script>
+</body>
+</html>

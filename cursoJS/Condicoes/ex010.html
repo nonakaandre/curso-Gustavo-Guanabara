@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro?</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.pais {
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+         
+        input {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Você é nativo ou estrangeiro?</h1>
+    <div class="pais">
+        <p>Digite seu país de origem:</p>
+         <input type="text" name="txtpais" id="txtpais">
+            <input type="button" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var txtp = document.querySelector('input#txtpais')
+            var res = document.querySelector(`div#res`)
+            var pais = txtp.value.toLowerCase()
+                res.innerHTML = `<p>Seu país de origem é <strong>${txtp.value}</strong></p>`
+            if (pais == 'brasil') {
+               res.innerHTML += 'Você é brasileiro!'
+            } else {
+                res.innerHTML += 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>

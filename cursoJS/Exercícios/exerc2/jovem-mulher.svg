@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250">
+  <!-- fundo verde claro -->
+  <rect width="250" height="250" rx="125" fill="#E8F5E9"/>
+  <!-- cabelo de fundo -->
+  <ellipse cx="125" cy="88" rx="66" ry="62" fill="#6D4C41"/>
+  <!-- pescoço -->
+  <rect x="112" y="152" width="26" height="28" rx="8" fill="#FDDBB4"/>
+  <!-- cabeça -->
+  <ellipse cx="125" cy="95" rx="54" ry="54" fill="#FDDBB4"/>
+  <!-- cabelo frente -->
+  <path d="M71 88 Q75 38 125 33 Q175 38 179 88 Q170 55 125 50 Q80 55 71 88Z" fill="#6D4C41"/>
+  <!-- olhos -->
+  <ellipse cx="108" cy="94" rx="7" ry="5" fill="#4E342E"/>
+  <ellipse cx="142" cy="94" rx="7" ry="5" fill="#4E342E"/>
+  <circle cx="110" cy="92" r="2.5" fill="white"/>
+  <circle cx="144" cy="92" r="2.5" fill="white"/>
+  <!-- sobrancelhas -->
+  <path d="M98 82 Q108 77 118 82" fill="none" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M132 82 Q142 77 152 82" fill="none" stroke="#5D4037" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- nariz -->
+  <path d="M120 108 Q125 118 130 108" fill="none" stroke="#C2867A" stroke-width="2" stroke-linecap="round"/>
+  <!-- boca -->
+  <path d="M110 125 Q125 136 140 125" fill="none" stroke="#E57373" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 125 Q125 134 140 125 Q125 142 110 125Z" fill="#EF9A9A" opacity="0.5"/>
+  <!-- cabelo lateral -->
+  <path d="M71 88 Q62 135 75 162 Q85 175 96 165 Q80 145 76 112Z" fill="#6D4C41"/>
+  <path d="M179 88 Q188 135 175 162 Q165 175 154 165 Q170 145 174 112Z" fill="#6D4C41"/>
+  <!-- corpo blusa verde -->
+  <path d="M65 250 Q65 185 125 180 Q185 185 185 250Z" fill="#81C784"/>
+</svg>

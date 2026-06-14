@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250">
+  <!-- fundo lilás -->
+  <rect width="250" height="250" rx="125" fill="#F3E5F5"/>
+  <!-- cabelo grisalho de fundo -->
+  <ellipse cx="125" cy="88" rx="66" ry="62" fill="#BDBDBD"/>
+  <!-- pescoço -->
+  <rect x="112" y="152" width="26" height="28" rx="8" fill="#FFCCBC"/>
+  <!-- cabeça -->
+  <ellipse cx="125" cy="95" rx="54" ry="54" fill="#FFCCBC"/>
+  <!-- cabelo frente grisalho -->
+  <path d="M71 88 Q75 38 125 33 Q175 38 179 88 Q170 55 125 50 Q80 55 71 88Z" fill="#BDBDBD"/>
+  <!-- rugas testa -->
+  <path d="M95 72 Q115 67 120 72" fill="none" stroke="#D4A090" stroke-width="1.5" opacity="0.6"/>
+  <path d="M130 72 Q135 67 155 72" fill="none" stroke="#D4A090" stroke-width="1.5" opacity="0.6"/>
+  <path d="M98 80 Q125 74 152 80" fill="none" stroke="#D4A090" stroke-width="1" opacity="0.4"/>
+  <!-- olhos -->
+  <ellipse cx="108" cy="96" rx="7" ry="5" fill="#5D4037"/>
+  <ellipse cx="142" cy="96" rx="7" ry="5" fill="#5D4037"/>
+  <circle cx="110" cy="94" r="2.5" fill="white"/>
+  <circle cx="144" cy="94" r="2.5" fill="white"/>
+  <!-- rugas sob olhos -->
+  <path d="M100 103 Q108 108 116 103" fill="none" stroke="#D4A090" stroke-width="1.2" opacity="0.5"/>
+  <path d="M134 103 Q142 108 150 103" fill="none" stroke="#D4A090" stroke-width="1.2" opacity="0.5"/>
+  <!-- sobrancelhas grisalhas -->
+  <path d="M98 84 Q108 79 118 84" fill="none" stroke="#9E9E9E" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M132 84 Q142 79 152 84" fill="none" stroke="#9E9E9E" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- nariz -->
+  <path d="M120 110 Q125 120 130 110" fill="none" stroke="#B08070" stroke-width="2" stroke-linecap="round"/>
+  <!-- boca -->
+  <path d="M110 128 Q125 136 140 128" fill="none" stroke="#C28070" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- rugas laterais boca -->
+  <path d="M106 128 Q102 136 106 148" fill="none" stroke="#D4A090" stroke-width="1.2" opacity="0.5"/>
+  <path d="M144 128 Q148 136 144 148" fill="none" stroke="#D4A090" stroke-width="1.2" opacity="0.5"/>
+  <!-- cabelo lateral -->
+  <path d="M71 88 Q62 135 75 162 Q85 175 96 165 Q80 145 76 112Z" fill="#BDBDBD"/>
+  <path d="M179 88 Q188 135 175 162 Q165 175 154 165 Q170 145 174 112Z" fill="#BDBDBD"/>
+  <!-- corpo blusa lilás -->
+  <path d="M65 250 Q65 185 125 180 Q185 185 185 250Z" fill="#CE93D8"/>
+</svg>

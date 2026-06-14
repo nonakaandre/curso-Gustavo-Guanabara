@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250">
+  <!-- fundo rosa claro -->
+  <rect width="250" height="250" rx="125" fill="#FCE4EC"/>
+  <!-- cabelo de fundo comprido -->
+  <ellipse cx="125" cy="90" rx="64" ry="60" fill="#C0392B"/>
+  <!-- cabelo lateral comprido -->
+  <path d="M61 90 Q50 150 65 200 Q78 215 92 205 Q75 170 72 130Z" fill="#C0392B"/>
+  <path d="M189 90 Q200 150 185 200 Q172 215 158 205 Q175 170 178 130Z" fill="#C0392B"/>
+  <!-- pescoço -->
+  <rect x="112" y="152" width="26" height="28" rx="8" fill="#FDDBB4"/>
+  <!-- cabeça -->
+  <ellipse cx="125" cy="97" rx="54" ry="54" fill="#FDDBB4"/>
+  <!-- franja -->
+  <path d="M71 88 Q78 55 125 50 Q160 52 179 75 Q165 58 125 56 Q85 58 71 88Z" fill="#C0392B"/>
+  <!-- olhos com cílios -->
+  <ellipse cx="108" cy="97" rx="7" ry="5.5" fill="#2C3E50"/>
+  <ellipse cx="142" cy="97" rx="7" ry="5.5" fill="#2C3E50"/>
+  <circle cx="110" cy="95" r="2.5" fill="white"/>
+  <circle cx="144" cy="95" r="2.5" fill="white"/>
+  <!-- cílios -->
+  <path d="M101 93 Q104 88 108 92" fill="none" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M115 91 Q112 86 108 91" fill="none" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M135 91 Q138 86 142 92" fill="none" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M149 93 Q146 88 142 91" fill="none" stroke="#2C3E50" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- sobrancelhas -->
+  <path d="M99 84 Q108 80 117 84" fill="none" stroke="#922B21" stroke-width="2" stroke-linecap="round"/>
+  <path d="M133 84 Q142 80 151 84" fill="none" stroke="#922B21" stroke-width="2" stroke-linecap="round"/>
+  <!-- nariz -->
+  <path d="M121 110 Q125 118 129 110" fill="none" stroke="#C2867A" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- boca com batom -->
+  <path d="M111 126 Q125 136 139 126" fill="none" stroke="#E91E63" stroke-width="3" stroke-linecap="round"/>
+  <path d="M111 126 Q125 134 139 126 Q125 140 111 126Z" fill="#F48FB1" opacity="0.6"/>
+  <!-- brinco -->
+  <circle cx="71" cy="108" r="4" fill="#F06292"/>
+  <circle cx="179" cy="108" r="4" fill="#F06292"/>
+  <!-- corpo blusa rosa -->
+  <path d="M65 250 Q65 185 125 180 Q185 185 185 250Z" fill="#F06292"/>
+  <!-- detalhe blusa -->
+  <path d="M112 180 L125 194 L138 180" fill="none" stroke="white" stroke-width="2.5"/>
+</svg>

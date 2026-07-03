@@ -1,35 +1,74 @@
-function contar() {
-    let inicio = document.getElementById('txti')
-    let fim = document.getElementById('txtf')
-    let passo = document.getElementById('txtp')
-    let res = document.getElementById('res') 
+let num = document.querySelector('input#fnum') // Recebe o conteúdo digitado dentro do input. 
+let lista = document.querySelector('select#flista') // Cria uma relação com 'select'.
+let res = document.querySelector('div#res') // Cria uma relação com a div de resultado.
+let valores = [] // Vetor que vai receber os valores a serem calculados.
 
-    // Validação dos campos (não podem serem vazios).
-    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
-        window.alert('[ERRO] Faltam dados!')
-        res.innerHTML = 'Impossivel contar'
+// Confirmando se estamos recebendo um número
+function isNumero(n) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
+        return true;
     } else {
-        // Se caso estiver tudo certo, muda o conteúdo dentro do id "res".
-        res.innerHTML = `Contando: <br>` 
-        // Criando um variavel para converter os "txt" em números. Por mais que estejam dentro de um input numbers ainda são strings.
-        let i = Number(inicio.value)
-        let f = Number(fim.value)
-        let p = Number(passo.value) 
-        if (p <= 0 ) {
-            alert('Passo inválido! considerando PASSO 1')
-            p = 1
-        }
-        if (i < f) {
-            // Contagem crescente
-            for(let c = i; c <= f; c+= p) {
-                res.innerHTML += ` ${c} \u{1F449} `  
-            }
-        } else {
-            // Contagem regressiva
-            for(let c = i; c >= f; c-= p) {
-                res.innerHTML += ` ${c} \u{1F449} `  
-            }
-        }
-        res.innerHTML += `\u{1F3C1}`
+        return false
     }
 }
+// Procurando se já existe o número na lista
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+
+function adicionar() {
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+        valores.push(Number(num.value))
+         // Cria um elemento option' entro do select.
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
+
+        // Após adicionar um número o total apresentado é zerado.
+        res.innerHTML = ''
+    } else {
+        alert('Valor inválido ou já encontrado na lista.')
+    }
+    // Apaga o conteúdo dentro do input number.
+    num.value = ''
+
+    // Adiciona foco ao input number (ou onde for selecionado)
+    num.focus()
+}
+
+function finalizar() {
+    // Verifica se existem elementos dentro da lista.
+    if (valores.length == 0) {
+        alert('Adicione valores para finalizar!')
+    } else {
+        // Verifica o número de itens dentro da lista.
+        let tot = valores.length
+
+        // adicionando o maior e o menor número no vetor
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
+        for (let pos in valores){
+            soma += valores[pos]
+            media = soma / tot
+            if(valores[pos] > maior) 
+                maior = valores[pos]
+            if(valores[pos] < menor) 
+                menor = valores[pos]
+            
+        }
+        // Limpa a div caso acho algum conteúdo e aprensenta uma string com a qtd.
+        res.innerHTML = ''
+        res.innerHTML += `<p>Ao todo temos ${tot} números cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
+        res.innerHTML += `<p>A soma de todos os valores é ${soma}</p>`
+        res.innerHTML += `<p>A média dos valores é ${media}</p>`
+    }
+} 

@@ -10,3 +10,5 @@ let amigo = {
 
 amigo.mudarPeso(-2)
 console.log(`${amigo.nome} pesa ${amigo.peso}kg`)
+
+window.confirm()

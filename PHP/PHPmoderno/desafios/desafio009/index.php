@@ -14,8 +14,8 @@
 
 <body>
     <?php 
-        $v1 = $_GET['v1'] ?? 0;
-        $v2 = $_GET['v2'] ?? 0;
+        $v1 = $_GET['v1'] ?? 1;
+        $v2 = $_GET['v2'] ?? 1;
         $p1 = $_GET['p1'] ?? 0;
         $p2 = $_GET['p2'] ?? 0;
     ?>
@@ -24,13 +24,13 @@
         <h1>Médias Aritméticas</h1>
         <form action="<?= $_SERVER['PHP_SELF']; ?>" method="get">
             <label for="v1">Valor1</label>
-            <input type="number" name="v1" id="v1" >
+            <input type="number" name="v1" id="v1" value="<?= $v1 ?>">
             <label for="p1">Peso1</label>
-            <input type="number" name="p1" id="p1">
+            <input type="number" name="p1" id="p1" value="<?= $p1 ?>" min="1" max="10">
             <label for="v2">Valor2</label>
-            <input type="number" name="v2" id="v2">
+            <input type="number" name="v2" id="v2" value="<?= $v2 ?>">
             <label for="p2">Peso2</label>
-            <input type="number" name="p2" id="p2" min="1" max="10">
+            <input type="number" name="p2" id="p2" value="<?= $p2 ?>" min="1" max="10">
             <input type="submit" value="Calcular médias">
         </form> 
     </section>

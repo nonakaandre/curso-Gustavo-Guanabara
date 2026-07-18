@@ -15,8 +15,9 @@
     $dividendo = $_GET['d1' ] ?? 0;
 
     // Captura o valor do parâmetro "d2" enviado via GET (divisor).
-    // Se não existir na URL, assume 0 como valor padrão.
-    $divisor = $_GET['d2'] ?? 0;
+    // Se não existir na URL, assume 1 como valor padrão.
+    // Evita divisão por zero, define 1 como valor padrão.
+    $divisor = $_GET['d2'] ?? 1; 
     ?>
     <header>
         <h1>Anatomia de uma Divisão</h1>

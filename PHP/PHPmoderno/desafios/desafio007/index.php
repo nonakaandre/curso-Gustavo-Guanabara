@@ -25,7 +25,7 @@
             <p>Considerando o salário mínimo de <strong>R$1.621,00</strong></p>
             <input type="submit" value="Calcular">
         </form>
-    </section>
+    </section> 
     <section>
         <h2>Resultado Final</h2>
         <?php 

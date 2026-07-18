@@ -14,13 +14,13 @@
 
 <body>
     <?php 
-    $num = $_GET['num'] ?? 0;
+    $num = $_GET['num'] ?? 1;
     ?>
     <section>
         <h1>Informe um número</h1>
-        <form action="<?= $_SERVER['PHP_SELF'] ?>">
+        <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
             <label for="num">Número</label>
-            <input type="number" name="num" id="num">
+            <input type="number" name="num" id="num" value="<?= $num ?>">
             <input type="submit" value="Calcular">
         </form>
     </section>
@@ -32,8 +32,8 @@
         $cubica =  pow($num , 1/3);
         ?>
         <ul>
-            <li>A sua raiz quadrada é <strong><?= number_format($raiz, 3); ?></strong></li>
-             <li>A sua raiz cúbica é <strong><?=number_format($cubica, 3); ?> </strong></li>
+            <li>A sua raiz quadrada é <strong><?= number_format($raiz, 2); ?></strong></li>
+             <li>A sua raiz cúbica é <strong><?=number_format($cubica, 2); ?> </strong></li>
          </ul>
         
     </section>

@@ -44,32 +44,6 @@ article {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
 }
 
-#estrutura {
-    flex-direction: column;
-    columns: 2;
-    font-size: 2.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 5px;
-    padding: 10px;
-    
-}
-
-#ds {
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
-}
-
-#dd, #ds, #sobra, #res {
-    margin: 5px;
-    padding: 10px;
-}
-
-#sobra {
-    text-decoration: underline;
-
-}
-
 footer {
     display: block;
     width: 100vw;
